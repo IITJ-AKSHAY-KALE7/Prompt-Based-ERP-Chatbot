@@ -6,3 +6,4 @@ pandas
 pandasai
 streamlit
 nltk
+tabulate

@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from pandasai import SmartDataframe
-from task_automation.task_executor import TaskExecutor, CustomLLM
+from task_automation.task_executor import TaskExecutor
 from intent_recognition.intent_classifier import IntentClassifier
 from intent_recognition.entity_extractor import EntityExtractor
 from dialog_management.dialog_manager import DialogManager
@@ -28,8 +28,11 @@ def main():
 
     if upload_csv_file is not None:
         data = pd.read_csv(upload_csv_file)
+        df = pd.DataFrame(data)
         data.columns = data.columns.str.upper()
         st.table(data.head(5))
+        with st.spinner("Preparing data..."):
+            task_executor.prepare_data(data)
         st.write('Data Uploaded Successfully!')
 
         st.markdown('---')
@@ -54,7 +57,7 @@ def main():
                     if intent == "data_analysis":
                         st.write('### Data Analysis Result:')
                         result = task_executor.execute_task(query, data)
-                        st.write(result)
+                        st.markdown(result)
                     elif intent == "run_workflow":
                         st.write('### Workflow:')
                         workflow_integrator.run_workflow("data_analysis_workflow")
