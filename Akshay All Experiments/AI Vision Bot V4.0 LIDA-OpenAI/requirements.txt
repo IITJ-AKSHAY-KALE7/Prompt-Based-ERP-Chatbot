@@ -1,0 +1,5 @@
+lida
+lida[transformer]
+torch
+streamlit
+python-dotenv
