@@ -227,7 +227,7 @@ def nlp_chatbot():
         
         user_query = st.text_area(
             "Ask me anything about the maintenance data:",
-            placeholder="For example: 'Show me a chart of maintenance costs over time.'",
+            placeholder="For example: '1] show the bar chart of the maintenance cost for last 90 days '",
             help="You can ask questions about maintenance types, total cost, average temperature, etc."
         )
         if st.button("Get Answer"):
@@ -242,19 +242,19 @@ Provide only the code; do not include any explanations.
 """
                 try:
                     response = model.generate_content(prompt_content)
-                    st.write("Debug: Response from Gemini model:", response)
+                   # st.write("Debug: Response from Gemini model:", response)
                 except Exception as e:
                     st.error(f"Error from Gemini model: {e}")
                     return
                 
                 if response and response.text:
                     code = extract_code_from_markdown(response.text)
-                    st.write("Debug: Extracted code:", code)
+                  #  st.write("Debug: Extracted code:", code)
                     # Adjust the code formatting
                     code_lines = code.strip().splitlines()
                     code_lines = [line.strip() for line in code_lines if line.strip()]
                     code = '\n'.join(code_lines)
-                    st.write("Debug: Adjusted code:", code)
+                  #  st.write("Debug: Adjusted code:", code)
                     if code:
                         try:
                             # Prepare the DataFrame 'df'
