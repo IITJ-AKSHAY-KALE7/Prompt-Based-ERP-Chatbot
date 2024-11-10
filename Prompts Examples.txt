@@ -1,0 +1,22 @@
+Prompts Example to try :
+
+1] show the bar chart of the maintenance cost for last 90 days 
+2] show the pie chart of the temperature for last 10 days
+5] Generate a line plot of temperature changes over the past 30 days.
+6] Show a scatter plot comparing cost vs. temperature for each maintenance event.
+7] Display a histogram of the days since the last maintenance.
+8] Show a box plot of maintenance costs for each technician.
+9] Create a heatmap of the average maintenance cost by day of the week.
+10] Generate a count plot showing the number of maintenance events by maintenance type.
+11] Display a bar chart of total maintenance cost per technician for the past year.
+12] Show a line plot of maintenance costs by date.
+13] Generate a pie chart showing the distribution of maintenance types in the last 100 days.
+14] Create a scatter plot comparing days since last maintenance and temperature.
+15] Show a histogram of maintenance costs.
+16] Display a box plot of temperature readings by technician.
+17] Generate a heatmap of maintenance frequency by month and maintenance type.
+18] Show a count plot of the number of maintenance events by temperature range.
+19] Create a bar chart showing total maintenance cost per month.
+20] Display a line plot of cumulative maintenance cost over time.
+21] Show a pie chart of maintenance costs segmented by technician.
+22] Generate a heatmap of days since last maintenance by technician and maintenance type.
