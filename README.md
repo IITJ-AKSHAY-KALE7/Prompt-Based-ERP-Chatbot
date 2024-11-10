@@ -3,7 +3,7 @@ This is a Prompt based Data Analysis and Visualization Chatbot for Enterprise Re
 
 An AI-powered ERP system built with Streamlit for an FMCG company, featuring predictive maintenance, inventory optimization, NLP chatbot, supplier management, role-based access control, data visualization dashboards, and audit logging.
 
-Features
+# Features
 Predictive Maintenance: Utilizes machine learning models to predict equipment failures, helping to schedule maintenance proactively and reduce downtime.
 
 Inventory Optimization: Implements ARIMA time-series forecasting to predict future inventory needs, optimizing stock levels and minimizing holding costs.
@@ -18,7 +18,7 @@ Data Visualization Dashboards: Provides interactive dashboards for maintenance t
 
 Audit Logging: Tracks and logs user activities within the system, offering an audit trail accessible to Admin users.
 
-Technologies Used
+# Technologies Used
 Streamlit: For building the interactive web application interface.
 
 Pandas: For data manipulation and handling Excel data integration.
@@ -35,7 +35,7 @@ spaCy: For natural language processing in the chatbot feature.
 
 OpenPyXL: For reading and writing Excel files.
 
-Getting Started
+# Getting Started
 Prerequisites:
 
 Python 3.7 or higher
@@ -49,11 +49,11 @@ Running the Application:
 
 Execute streamlit run app.py in the terminal.
 Access the application via the provided local URL.
-Usage
+# Usage
 Login: Users must log in with their credentials to access the system.
 Navigation: Use the sidebar to navigate between different features based on your user role.
 Data Input: Authorized users can input maintenance data and manage suppliers directly through the application.
 Analytics: Access dashboards and run predictive models to gain insights into operations.
 Chatbot: Interact with the NLP chatbot to retrieve information and generate reports using natural language queries.
-Note
+# Note
 This project is intended for educational purposes to demonstrate the integration of AI and machine learning into an ERP system within an FMCG context.
